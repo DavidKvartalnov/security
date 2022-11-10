@@ -1,0 +1,13 @@
+{% extends 'protected/base.html' %}
+
+
+{% block form %}
+<form action="{% url 'secret_reference' %}" method="get">
+    <label>your data</label><br>
+    <input  name='text'><br>
+    <label>pin</label><br>
+    <input name='pin'><br>
+    <br>
+    <button type="submit">save</button>
+</form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'protected/base.html' %}
+
+
+{% block form %}
+<form action="{% url 'enter_pin_code' reference_uuid %}" method="get">
+    <label>enter your pin</label><br>
+    <input name='pin'><br>
+    <br>
+    <button type="submit">push</button>
+</form>
+{% endblock %}
